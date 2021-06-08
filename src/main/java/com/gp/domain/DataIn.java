@@ -2,6 +2,8 @@ package com.gp.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+
 /**
  * 
  * @author salonsodecaso

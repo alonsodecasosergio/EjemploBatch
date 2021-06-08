@@ -67,10 +67,9 @@ public class JobBatchConfiguration {
 
     @Bean
     public ItemWriter<DataOut> writer() {
-
+    	
         FlatFileItemWriter<DataOut> writer = new FlatFileItemWriter<>();
 
-        FileSystemResource fileSystemResource = new FileSystemResource(new File("C://Users//gustavo.peiretti//developer//"));
         writer.setResource(new ClassPathResource("output.txt"));
         //writer.setResource(fileSystemResource);
 
